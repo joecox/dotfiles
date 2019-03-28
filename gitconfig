@@ -1,0 +1,9 @@
+[user]
+	name = Joe Cox
+	email = joeyalancox@gmail.com
+[push]
+	default = simple
+[core]
+  commentchar = ";"
+[pager]
+  branch = false
