@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Quiet Light",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.macOptionIsMeta": true
+}
