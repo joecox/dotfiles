@@ -5,5 +5,8 @@
 	default = simple
 [core]
   commentchar = ";"
+[alias]
+  serve = daemon --verbose --export-all --base-path=.git --reuseaddr --strict-paths .git/
+  checkpoint-checkout = "!git stash push -m \"co backup\"; git stash apply; git checkout \"$@\""
 [pager]
   branch = false
