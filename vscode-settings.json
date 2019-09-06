@@ -1,11 +1,14 @@
 {
     "editor.fontSize": 13,
     "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
     "workbench.colorTheme": "Quiet Light",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "terminal.integrated.macOptionIsMeta": true
+    "terminal.integrated.macOptionIsMeta": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescrip.updateImportsOnFileMove.enabled": "always",
 }
