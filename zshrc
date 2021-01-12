@@ -109,10 +109,5 @@ server() {
 # custom styles
 # LSCOLORS=exFxcxdxGxcdedabagacad
 
-# Brewed setup
-source $(brew --prefix)/etc/profile.d/z.sh
-source $(brew --prefix asdf)/asdf.sh
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # misc
 unsetopt AUTO_CD
