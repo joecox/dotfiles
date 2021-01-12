@@ -9,6 +9,4 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "terminal.integrated.macOptionIsMeta": true,
-    "typescript.preferences.quoteStyle": "single",
-    "typescrip.updateImportsOnFileMove.enabled": "always",
 }
