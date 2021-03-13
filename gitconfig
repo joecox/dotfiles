@@ -10,3 +10,5 @@
   checkpoint-checkout = "!git stash push -m \"co backup\"; git stash apply; git checkout \"$@\""
 [pager]
   branch = false
+[init]
+	defaultBranch = main
