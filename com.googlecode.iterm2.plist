@@ -639,6 +639,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>PreventEscapeSequenceFromClearingHistory</key>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>SoundForEsc</key>

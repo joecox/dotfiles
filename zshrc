@@ -111,3 +111,5 @@ server() {
 
 # misc
 unsetopt AUTO_CD
+
+[[ -f "$HOME/.zshrc-local" ]] && source "$HOME/.zshrc-local"
