@@ -68,7 +68,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-export EDITOR="emacs -Q"
+export EDITOR="code --wait --new-window"
+export VISUAL="$EDITOR"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
