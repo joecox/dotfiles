@@ -50,13 +50,13 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git asdf)
 
 # User configuration
 
 export PATH="/usr/local/bin:$PATH"
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -89,28 +89,18 @@ export VISUAL="$EDITOR"
 alias re="source ~/.zshrc"
 alias algrep="alias | grep"
 alias ll="ls -lahoGF"
-alias eamcs="emacs"
-alias shrug="echo -n '¯\_(ツ)_/¯' | tee /dev/tty | pbcopy; echo"
 alias gbl="git branch -l"
 alias gbd="git branch -d"
 
 # functions
-synesthesia() {
-  hex=$(echo "$@" | shasum | cut -c 1-6)
-  echo $hex
-  echo -n $hex | pbcopy
-  open "https://www.google.com/search?q=%23${hex}"
-}
-
 server() {
   port=${1:-8000}
   python -m SimpleHTTPServer $port
 }
 
-# custom styles
-# LSCOLORS=exFxcxdxGxcdedabagacad
-
 # misc
 unsetopt AUTO_CD
 
 [[ -f "$HOME/.zshrc-local" ]] && source "$HOME/.zshrc-local"
+
+export XDG_CONFIG_HOME="$HOME/.config"
