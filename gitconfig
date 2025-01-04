@@ -1,14 +1,14 @@
 [user]
-	name = Joe Cox
-	email = joeyalancox@gmail.com
+    name = Joe Cox
+    email = joeyalancox@gmail.com
 [push]
-	default = simple
+    default = simple
 [core]
-  commentchar = ";"
-[alias]
-  serve = daemon --verbose --export-all --base-path=.git --reuseaddr --strict-paths .git/
-  checkpoint-checkout = "!git stash push -m \"co backup\"; git stash apply; git checkout \"$@\""
+    commentchar = ";"
+    pager = delta
 [pager]
-  branch = false
-[init]
-	defaultBranch = main
+    branch = false
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictstyle = zdiff3
