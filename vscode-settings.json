@@ -1,12 +1,11 @@
 {
-    "editor.fontSize": 13,
-    "editor.tabSize": 2,
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Quiet Light",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "workbench.preferredLightColorTheme": "Quiet Light",
+    "window.autoDetectColorScheme": true,
+    "telemetry.telemetryLevel": "off",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "terminal.integrated.macOptionIsMeta": true,
+    "security.workspace.trust.enabled": false,
 }
