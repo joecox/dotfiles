@@ -1,5 +1,10 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# command or file exists
+__exists() {
+  type "$1" 2>&1 >/dev/null
+}
+
 ### EDITOR
 export EDITOR="code --wait --new-window"
 export VISUAL="$EDITOR"
@@ -10,7 +15,7 @@ alias re="source ~/.zshrc"
 # algrep: grep thru aliases
 alias algrep="alias | grep"
 # use GNU ls if available (respects LS_COLORS)
-[ -x "$(command -v gls)" ] && alias ls="gls --color"
+__exists gls && alias ls="gls --color"
 # ll: better ls
 alias ll="ls -lahoGF"
 
@@ -69,6 +74,13 @@ zstyle ':completion:*' menu select
 
 # Use term colors except make symlinks green
 export LS_COLORS="ln=01;32"
+
+# prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt prompt_subst
+zstyle ':vcs_info:git:*' formats '%b'
+export PROMPT='%B%F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%b '
 
 # Some tools such as ghostty use XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
