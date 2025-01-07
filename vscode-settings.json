@@ -1,11 +1,25 @@
 {
+    "$schema": "vscode://schemas/settings/user",
+
+    // Appearance
+    "editor.fontSize": 14,
+    "window.zoomPerWindow": false,
     "editor.minimap.enabled": false,
     "workbench.preferredLightColorTheme": "Quiet Light",
     "window.autoDetectColorScheme": true,
+
+    // Telemetry
     "telemetry.telemetryLevel": "off",
+
+    // Editor save behavior
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
+
+    // Terminal configuration
     "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.fontSize": 14,
+
+    // Misc
     "security.workspace.trust.enabled": false,
 }
