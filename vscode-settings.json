@@ -8,9 +8,6 @@
     "workbench.preferredLightColorTheme": "Quiet Light",
     "window.autoDetectColorScheme": true,
 
-    // Telemetry
-    "telemetry.telemetryLevel": "off",
-
     // Editor save behavior
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -22,4 +19,18 @@
 
     // Misc
     "security.workspace.trust.enabled": false,
+    "telemetry.telemetryLevel": "off",
+
+    // Copilot, if installed
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "scminput": false,
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+
+    // Liveshare, if installed
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.languages.allowGuestCommandControl": true,
 }
