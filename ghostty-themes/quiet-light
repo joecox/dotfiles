@@ -3,15 +3,15 @@ palette = 0=#333333
 palette = 8=#666666
 
 # Red
-palette = 1=#aa3731
+palette = 1=#cd3131
 palette = 9=#cd3131
 
 # Green
-palette = 2=#448c27
-palette = 10=#448c27
+palette = 2=#369511
+palette = 10=#369511
 
 # Yellow
-palette = 3=#d9ba73
+palette = 3=#9c5d27
 palette = 11=#9c5d27
 
 # Blue
