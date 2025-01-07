@@ -83,6 +83,10 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' formats ' %b'
 export PROMPT='%B%F{blue}%~%f%F{red}${vcs_info_msg_0_}%f%b '
 
+# make M-f/M-b/etc use slash/dash/etc as word boundaries
+autoload -Uz select-word-style
+select-word-style bash
+
 # Some tools such as ghostty use XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
 
