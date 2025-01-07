@@ -12,3 +12,5 @@
     diffFilter = delta --color-only
 [merge]
     conflictstyle = zdiff3
+[branch]
+    sort = -committerdate
