@@ -34,6 +34,7 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 alias gunwip='git rev-list --max-count=1 --format="%s" HEAD | grep -q "\--wip--" && git reset HEAD~1'
 
 # branching
+alias gb="git branch"
 alias gbd="git branch -d"
 alias gco='git checkout'
 
@@ -79,8 +80,8 @@ export LS_COLORS="ln=01;32"
 autoload -Uz vcs_info
 precmd() { vcs_info }
 setopt prompt_subst
-zstyle ':vcs_info:git:*' formats '%b'
-export PROMPT='%B%F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%b '
+zstyle ':vcs_info:git:*' formats ' %b'
+export PROMPT='%B%F{blue}%~%f%F{red}${vcs_info_msg_0_}%f%b '
 
 # Some tools such as ghostty use XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
