@@ -9,24 +9,31 @@ export VISUAL="$EDITOR"
 alias re="source ~/.zshrc"
 # algrep: grep thru aliases
 alias algrep="alias | grep"
+# use GNU ls if available (respects LS_COLORS)
+[ -x "$(command -v gls)" ] && alias ls="gls --color"
 # ll: better ls
 alias ll="ls -lahoGF"
 
 ## git aliases
 ## mostly from https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-# working tree mgmt
+# working tree/committing
 alias ga="git add"
 alias gapa="git add --patch"
-alias gbd="git branch -d"
-alias gco='git checkout'
 alias gsta='git stash push'
 alias gstl='git stash list'
 alias gstp='git stash pop'
+alias grst='git restore --staged'
 alias gc='git commit --verbose'
 alias gc!='git commit --verbose --amend'
-alias gp='git push'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'
 alias gunwip='git rev-list --max-count=1 --format="%s" HEAD | grep -q "\--wip--" && git reset HEAD~1'
+
+# branching
+alias gbd="git branch -d"
+alias gco='git checkout'
+
+# remotes
+alias gp='git push'
 
 # viewing
 alias gst='git status'
@@ -46,10 +53,10 @@ alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase --interactive'
 
-# functions
+# server: start a file server at a random (0) or provided port
 server() {
-  port=${1:-8000}
-  python -m SimpleHTTPServer $port
+  port=${1:-0}
+  python3 -m http.server $port
 }
 
 # Require explicit `cd` use
@@ -60,6 +67,10 @@ unsetopt AUTO_CD
 # https://unix.stackexchange.com/a/470959
 zstyle ':completion:*' menu select
 
-[[ -f "$HOME/.zshrc-local" ]] && source "$HOME/.zshrc-local"
+# Use term colors except make symlinks green
+export LS_COLORS="ln=01;32"
 
+# Some tools such as ghostty use XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
+
+[[ -f "$HOME/.zshrc-local" ]] && source "$HOME/.zshrc-local"
