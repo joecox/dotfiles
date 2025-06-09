@@ -48,5 +48,5 @@
   {
     "key": "shift+cmd+j",
     "command": "workbench.action.toggleMaximizedPanel"
-  },
+  }
 ]
