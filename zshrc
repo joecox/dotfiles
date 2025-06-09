@@ -59,6 +59,11 @@ alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase --interactive'
 
+# git cherry-pick
+alias gcp='git cherry-pick'
+alias gcpc='git cherry-pick --continue'
+alias gcpa='git cherry-pick --abort'
+
 # server: start a file server at a random (0) or provided port
 server() {
   port=${1:-0}
