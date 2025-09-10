@@ -78,6 +78,10 @@ unsetopt AUTO_CD
 # https://unix.stackexchange.com/a/470959
 zstyle ':completion:*' menu select
 
+# Enable tab completion
+autoload -Uz compinit
+compinit
+
 # Use term colors except make symlinks green
 export LS_COLORS="ln=01;32"
 

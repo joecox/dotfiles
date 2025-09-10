@@ -28,10 +28,10 @@
         "plaintext": false,
         "scminput": false,
     },
-    "github.copilot.editor.enableAutoCompletions": true,
 
     // Liveshare, if installed
     "liveshare.allowGuestDebugControl": true,
     "liveshare.allowGuestTaskControl": true,
     "liveshare.languages.allowGuestCommandControl": true,
+    "python.analysis.typeCheckingMode": "standard",
 }
