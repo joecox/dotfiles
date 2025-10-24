@@ -1,4 +1,5 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export fpath=(~/.zsh/functions $fpath)
 
 # command or file exists
 __exists() {
@@ -81,6 +82,10 @@ zstyle ':completion:*' menu select
 # Enable tab completion
 autoload -Uz compinit
 compinit
+
+# Enable manydots (`cd ...` etc)
+autoload -Uz manydots-magic
+manydots-magic
 
 # Use term colors except make symlinks green
 export LS_COLORS="ln=01;32"
