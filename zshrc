@@ -28,6 +28,7 @@ alias gapa="git add --patch"
 alias gsta='git stash push'
 alias gstl='git stash list'
 alias gstp='git stash pop'
+alias gstd='git stash drop'
 alias grst='git restore --staged'
 alias gc='git commit --verbose'
 alias gc!='git commit --verbose --amend'
@@ -103,5 +104,8 @@ select-word-style bash
 
 # Some tools such as ghostty use XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# Load uv completions if they exist
+__exists "uv" && eval "$(uv generate-shell-completion zsh)"
 
 [[ -f "$HOME/.zshrc-local" ]] && source "$HOME/.zshrc-local"
