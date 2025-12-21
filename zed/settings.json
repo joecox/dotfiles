@@ -1,0 +1,56 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "terminal": {
+    "font_size": 14.0,
+    "option_as_meta": true,
+    "detect_venv": "off",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "ensure_final_newline_on_save": true,
+  "base_keymap": "VSCode",
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "system",
+    "light": "Quiet Light",
+    "dark": "One Dark",
+  },
+  "auto_install_extensions": {
+    "fish": true,
+    "git-firefly": true,
+    "editorconfig": true,
+    "quiet-light-theme": true,
+  },
+  "languages": {
+    "Fish": {
+      "formatter": {
+        "external": {
+          "command": "fish",
+          "arguments": ["-c", "fish_indent"],
+        },
+      },
+    },
+  },
+  "format_on_save": "off",
+  "file_types": {
+    "Git Config": ["*.gitconfig", "gitconfig", "**/.git/config"],
+  },
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "buffer_line_height": { "custom": 1.4 },
+  "wrap_guides": [80, 88, 100],
+  "ui_font_family": ".SystemUIFont",
+}
