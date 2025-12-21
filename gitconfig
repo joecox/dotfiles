@@ -4,7 +4,6 @@
 [push]
     default = simple
 [core]
-    commentchar = ";"
     pager = delta
 [pager]
     branch = false
