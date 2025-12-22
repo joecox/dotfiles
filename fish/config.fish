@@ -4,8 +4,9 @@ if status is-interactive
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     # Editor
-    set -gx GIT_EDITOR "zed --wait"
-    set -gx VISUAL "$GIT_EDITOR"
+    set -gx EDITOR "zed --wait"
+    set -gx GIT_EDITOR "$EDITOR"
+    set -gx VISUAL "$EDITOR"
 
     # Alias/Abbr
     # re: reload shell config

@@ -1,6 +1,9 @@
 window-theme = system
 theme = dark:Dark Modern,light:quiet-light
-font-family = Menlo
+font-family = SF Mono
 font-size = 14
+font-feature = -calt, -liga, -dlig
+font-style = Medium
 
 shell-integration-features = no-cursor
+keybind = super+,=text:ghostty +edit-config
