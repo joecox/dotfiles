@@ -11,12 +11,10 @@ if status is-interactive
     # Alias/Abbr
     # re: reload shell config
     abbr -a re "source ~/.config/fish/config.fish"
-    # algrep: grep thru aliases
-    abbr -a algrep "alias | grep"
     # use GNU ls if available
     type -q gls; and abbr -a ls "gls --color"
     # ll: better ls
-    abbr -a ll "ls -lahoGF"
+    abbr -a ll "gls --color -lahoGF"
 
     # git aliases
     # mostly from https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
@@ -65,8 +63,7 @@ if status is-interactive
     abbr -a gcpa 'git cherry-pick --abort'
 
     # Use term colors except make symlinks green
-    # TODO: doesn't work
-    # set -gx LS_COLORS "ln=01;32"
+    set -gx LS_COLORS "ln=01;32"
 
     # Some tools such as ghostty use XDG_CONFIG_HOME
     set -gx XDG_CONFIG_HOME "$HOME/.config"
