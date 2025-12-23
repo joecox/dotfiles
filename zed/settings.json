@@ -38,6 +38,12 @@
 
   // editor behavior
   "format_on_save": "off",
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
 
   // extensions/associations
   "auto_install_extensions": {
