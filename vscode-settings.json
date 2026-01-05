@@ -17,6 +17,15 @@
     // Terminal configuration
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.profiles.osx": {
+        "fish": {
+            "path": "/opt/homebrew/bin/fish",
+            "args": [
+                "-l"
+            ]
+        },
+    },
+    "terminal.integrated.defaultProfile.osx": "fish",
 
     // Misc
     "security.workspace.trust.enabled": false,
