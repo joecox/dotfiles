@@ -19,6 +19,20 @@
     "light": "Quiet Light",
     "dark": "One Dark",
   },
+  "theme_overrides": {
+    "Quiet Light": {
+      "syntax": {
+        "comment": {
+          "font_style": "normal",
+        },
+        "attribute": {
+          "color": "#AA3731",
+          "font_style": "normal",
+          "font_weight": 700,
+        }
+      },
+    },
+  },
   "buffer_font_family": "SF Mono",
   "buffer_font_size": 14.0,
   "buffer_font_features": {
