@@ -11,9 +11,8 @@ function gcobmain --description "fetch and checkout new branch from main branch"
     or return 1
 
     set -l remote (git remote)
-    set -l head_remote_ref (git symbolic-ref "refs/remotes/$remote/HEAD" --short)
-    set -l head_ref (echo -n $head_remote_ref | sd "$remote/" "")
+    set -l head_ref (git remote show $remote | grep 'HEAD branch' | sd '^.*HEAD branch: (.*)$' '$1')
 
     git fetch $remote $head_ref
-    git checkout -b $branchname $head_remote_ref
+    git checkout -b $branchname origin/$head_ref
 end
