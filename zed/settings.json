@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // meta
+  "session": {
+    "trust_all_worktrees": true
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -41,11 +44,6 @@
   "buffer_line_height": { "custom": 1.4 },
   "wrap_guides": [80, 88, 100],
   "ui_font_family": ".SystemUIFont",
-  "terminal": {
-    "font_size": 14.0,
-    "option_as_meta": true,
-    "detect_venv": "off",
-  },
   "minimap": {
     "show": "never",
   },
@@ -59,9 +57,22 @@
     "enabled": false,
   },
 
+  // terminal
+  "terminal": {
+    "font_size": 14.0,
+    "option_as_meta": true,
+    "detect_venv": "off",
+    "env": {
+      "EDITOR": "zed --wait",
+      "GIT_EDITOR": "$EDITOR",
+      "VISUAL": "$EDITOR",
+    },
+  },
+
   // extensions/associations
   "auto_install_extensions": {
     "fish": true,
+    "toml": true,
     "git-firefly": true,
     "editorconfig": true,
     "quiet-light-theme": true,
