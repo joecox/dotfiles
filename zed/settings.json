@@ -87,6 +87,9 @@
         },
       },
     },
+    "Git Commit": {
+      "show_edit_predictions": false,
+    }
   },
   "file_types": {
     "Git Config": ["*.gitconfig", "gitconfig", "**/.git/config"],
