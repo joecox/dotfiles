@@ -16,4 +16,6 @@
 [init]
     defaultBranch = main
 [diff]
-	algorithm = histogram
+    algorithm = histogram
+[fetch]
+    prune = true
