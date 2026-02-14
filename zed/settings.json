@@ -8,6 +8,10 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // meta
+  "edit_predictions": {
+    "provider": "copilot",
+    "mode": "subtle"
+  },
   "session": {
     "trust_all_worktrees": true
   },
@@ -50,9 +54,6 @@
 
   // editor behavior
   "format_on_save": "off",
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "drag_and_drop_selection": {
     "enabled": false,
   },

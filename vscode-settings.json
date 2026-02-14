@@ -3,8 +3,11 @@
 
     // Appearance
     "editor.fontSize": 14,
-    "window.zoomPerWindow": false,
+    "editor.fontFamily": "SF Mono",
+    "editor.fontLigatures": false,
+    "editor.rulers": [88, 100],
     "editor.minimap.enabled": false,
+    "window.zoomPerWindow": false,
     "workbench.preferredLightColorTheme": "Quiet Light",
     "window.autoDetectColorScheme": true,
     "workbench.editor.revealIfOpen": true,
@@ -42,7 +45,4 @@
     "liveshare.allowGuestDebugControl": true,
     "liveshare.allowGuestTaskControl": true,
     "liveshare.languages.allowGuestCommandControl": true,
-    "python.analysis.typeCheckingMode": "standard",
-    "ty.inlayHints.variableTypes": false,
-    "ty.inlayHints.callArgumentNames": false,
 }
