@@ -12,6 +12,44 @@
     "window.autoDetectColorScheme": true,
     "workbench.editor.revealIfOpen": true,
 
+    "editor.tokenColorCustomizations": {
+        "[Default Dark Modern]": {
+            "textMateRules": [
+                {
+        			"name": "Comments",
+        			"scope": [
+        				"comment",
+        				"punctuation.definition.comment"
+        			],
+        			"settings": {
+        				"fontStyle": "italic",
+        				"foreground": "#AAAAAA"
+        			}
+        		},
+                {
+                    "name": "Comments: Preprocessor",
+                    "scope": "comment.block.preprocessor",
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#AAAAAA"
+                    }
+                },
+                {
+                    "name": "Comments: Documentation",
+                    "scope": [
+                        "comment.documentation",
+                        "comment.block.documentation",
+                        "comment.block.documentation punctuation.definition.comment "
+                    ],
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#6A9955"
+                    }
+                },
+            ]
+        }
+    },
+
     // Editor save behavior
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
