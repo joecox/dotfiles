@@ -11,6 +11,7 @@
     "workbench.preferredLightColorTheme": "Quiet Light",
     "window.autoDetectColorScheme": true,
     "workbench.editor.revealIfOpen": true,
+    "workbench.editor.empty.hint": "hidden",
 
     "editor.tokenColorCustomizations": {
         "[Default Dark Modern]": {
@@ -23,7 +24,7 @@
         			],
         			"settings": {
         				"fontStyle": "italic",
-        				"foreground": "#AAAAAA"
+        				"foreground": "#999"
         			}
         		},
                 {
@@ -31,7 +32,7 @@
                     "scope": "comment.block.preprocessor",
                     "settings": {
                         "fontStyle": "",
-                        "foreground": "#AAAAAA"
+                        "foreground": "#999"
                     }
                 },
                 {
