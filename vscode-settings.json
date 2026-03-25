@@ -68,12 +68,18 @@
         },
     },
     "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.env.osx": {
+        "EDITOR": "code -rw"
+    },
+    "terminal.integrated.initialHint": false,
+    "python.terminal.activateEnvironment": false,
 
     // Misc
     "security.workspace.trust.enabled": false,
     "telemetry.telemetryLevel": "off",
+    "extensions.ignoreRecommendations": true,
 
-    // Copilot, if installed
+    // LLMs
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,

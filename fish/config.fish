@@ -4,7 +4,9 @@ if status is-interactive
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     # Editor
-    set -gx EDITOR "zed --wait"
+    if not set -q EDITOR
+        set -gx EDITOR "code -rw"
+    end
     set -gx GIT_EDITOR "$EDITOR"
     set -gx VISUAL "$EDITOR"
 
