@@ -9,6 +9,7 @@
     "editor.minimap.enabled": false,
     "window.zoomPerWindow": false,
     "workbench.preferredLightColorTheme": "Quiet Light",
+    "workbench.preferredDarkColorTheme": "Dark Modern",
     "window.autoDetectColorScheme": true,
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.empty.hint": "hidden",
