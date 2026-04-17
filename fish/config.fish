@@ -22,6 +22,7 @@ if status is-interactive
     # mostly from https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
     # working tree/committing
     abbr -a ga "git add"
+    abbr -a gau "git add -u"
     abbr -a gapa "git add --patch"
     abbr -a gsta 'git stash push'
     abbr -a gstl 'git stash list'
