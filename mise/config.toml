@@ -1,12 +1,95 @@
 [tools]
+awscli = { version = "2.39.4", symlink_bins = "true" }
+bat = "0.26.1"
+coreutils = "0.12.0"
+delta = "0.20.1"
+dive = "0.13.1"
+doggo = "1.4.2"
+fd = "10.5.1"
+gh = "2.103.3"
+"github:alltuner/mise-completions-sync" = "0.5.20"
 helix = "25.07.1"
+hexyl = "0.17.0"
+hyperfine = "2.0.0"
+jq = "1.8.2"
 node = "26"
+ripgrep = "15.2.0"
+sd = "1.1.0"
+xh = "0.26.3"
 
 [settings]
 pin = true
 
 [settings.ruby]
 compile = false
+
+[hooks]
+postinstall = "misecompsync --new-only -s fish"
+
+[bootstrap.user]
+login_shell = "fish"
+
+[bootstrap.packages]
+"brew:fish" = "latest"
+"brew:git" = "latest"
+"brew:pstree" = "latest"
+"brew:tree" = "latest"
+"brew:xsv" = "latest"
+
+"brew-cask:1password" = "latest"
+"brew-cask:visual-studio-code" = "latest"
+"brew-cask:clocker" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:firefox" = "latest"
+"brew-cask:spotify" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:docker-desktop" = "latest"
+
+[bootstrap.macos.dock]
+autohide = true
+show_recents = false
+
+[bootstrap.macos.finder]
+preferred_view_style = "list"
+show_all_files = true
+show_extensions_warning = false
+
+[bootstrap.macos.login_items]
+apps = [
+    "/Applications/Clocker.app",
+]
+
+[bootstrap.macos.trackpad]
+tap_to_click = true
+
+[bootstrap.macos.defaults."NSGlobalDomain"]
+# Appearance: Auto
+AppleInterfaceStyleSwitchesAutomatically = true
+
+# Disable natural scrolling and Force Click
+"com.apple.swipescrolldirection" = false
+"com.apple.trackpad.forceClick" = false
+
+# Disable inserting a period with double-space
+NSAutomaticPeriodSubstitutionEnabled = false
+
+[bootstrap.macos.defaults."com.apple.dock"]
+mineffect = "scale"
+"minimize-to-application" = true
+
+"wvous-tl-corner" = 1
+"wvous-tr-corner" = 1
+"wvous-bl-corner" = 1
+"wvous-br-corner" = 1
+
+[bootstrap.macos.defaults."com.apple.menuextra.clock"]
+ShowDate = 1
+
+[[bootstrap.macos.defaults_entries]]
+domain = "com.apple.controlcenter"
+key = "BatteryShowPercentage"
+host = "current"
+value = true
 
 [dotfile_groups.git]
 root = "git"
@@ -38,7 +121,4 @@ root = "misc"
 root = "pi"
 target = "~/.pi"
 [dotfile_groups.pi.entries]
-"~/.pi/agent/settings.json/shared" = {
-    source = "settings.json",
-    merge = true
-}
+"~/.pi/agent/settings.json/shared" = { merge = true }
