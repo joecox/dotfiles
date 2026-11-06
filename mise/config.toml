@@ -1,5 +1,5 @@
 [tools]
-awscli = { version = "2.39.4", symlink_bins = "true" }
+awscli = { version = "2.39.5", symlink_bins = "true" }
 bat = "0.26.1"
 coreutils = "0.12.0"
 delta = "0.20.1"
@@ -12,7 +12,7 @@ helix = "25.07.1"
 hexyl = "0.17.0"
 hyperfine = "2.0.0"
 jq = "1.8.2"
-node = "26"
+node = "26.13.0"
 ripgrep = "15.2.0"
 sd = "1.1.0"
 xh = "0.26.3"
