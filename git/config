@@ -1,0 +1,29 @@
+[user]
+	name = Joe Cox
+	email = joeyalancox@gmail.com
+[push]
+	default = simple
+[core]
+	pager = delta
+[pager]
+	branch = false
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = zdiff3
+[branch]
+	sort = -committerdate
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+[fetch]
+	prune = true
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[include]
+	path = ~/.gitconfig.local

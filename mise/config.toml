@@ -1,0 +1,44 @@
+[tools]
+helix = "25.07.1"
+node = "26"
+
+[settings]
+pin = true
+
+[settings.ruby]
+compile = false
+
+[dotfile_groups.git]
+root = "git"
+[dotfile_groups.git.entries]
+"~/.gitconfig" = { source = "config" }
+
+[dotfile_groups.fish]
+root = "fish"
+target = "~/.config/fish"
+
+[dotfile_groups.mise]
+root = "mise"
+target = "~/.config/mise"
+
+[dotfile_groups.ghostty]
+root = "ghostty"
+target = "~/.config/ghostty"
+
+[dotfile_groups.rex]
+root = "rex"
+target = "~/.config/rex"
+
+[dotfile_groups.misc]
+root = "misc"
+[dotfile_groups.misc.entries]
+"~/.hushlogin" = { source = "hushlogin" }
+
+[dotfile_groups.pi]
+root = "pi"
+target = "~/.pi"
+[dotfile_groups.pi.entries]
+"~/.pi/agent/settings.json/shared" = {
+    source = "settings.json",
+    merge = true
+}
