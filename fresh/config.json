@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "theme": "builtin://terminal",
+  "editor": {
+    "show_vertical_scrollbar": false,
+    "show_horizontal_scrollbar": false
+  },
+  "file_explorer": {
+    "width": "20%",
+    "show_hidden": true
+  },
+  "plugins": {
+    "welcome_screen": {
+      "settings": {
+        "showOnStartup": false
+      },
+      "enabled": true
+    },
+    "orchestrator": {
+      "enabled": false
+    },
+    "vi_mode": {
+      "enabled": false
+    }
+  },
+  "lsp": {
+    "toml": {
+      "command": "mise",
+      "args": ["lsp"],
+      "enabled": true,
+      "auto_start": true
+    }
+  },
+  "active_keybinding_map": "emacs"
+}

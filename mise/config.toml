@@ -8,6 +8,7 @@ doggo = "1.4.2"
 fd = "10.5.1"
 gh = "2.103.3"
 "github:alltuner/mise-completions-sync" = "0.5.20"
+"github:sinelaw/fresh" = { version = "0.5.7", asset_pattern = "fresh-editor-aarch64-apple-darwin.tar.xz" }
 helix = "25.07.1"
 hexyl = "0.17.0"
 hyperfine = "2.0.0"
@@ -103,6 +104,12 @@ target = "~/.config/fish"
 [dotfile_groups.mise]
 root = "mise"
 target = "~/.config/mise"
+
+[dotfile_groups.fresh]
+root = "fresh"
+target = "~/.config/fresh"
+[dotfile_groups.fresh.entries]
+"~/.config/fresh/config.json/shared" = { merge = true }
 
 [dotfile_groups.ghostty]
 root = "ghostty"
