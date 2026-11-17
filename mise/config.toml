@@ -48,7 +48,6 @@ login_shell = "fish"
 "brew-cask:spotify" = "latest"
 "brew-cask:slack" = "latest"
 "brew-cask:docker-desktop" = "latest"
-"brew-cask:obsidian" = "latest"
 
 [bootstrap.macos.dock]
 autohide = true
