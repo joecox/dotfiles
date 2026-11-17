@@ -1,9 +1,7 @@
 [tools]
-awscli = { version = "2.40.1", symlink_bins = "true" }
 bat = "0.26.1"
 coreutils = "0.12.0"
 delta = "0.20.1"
-dive = "0.13.1"
 doggo = "1.4.2"
 fd = "10.5.2"
 gh = "2.103.3"
@@ -13,9 +11,7 @@ helix = "25.07.1"
 hexyl = "0.17.0"
 hyperfine = "2.0.0"
 jq = "1.8.2"
-node = "26"
 "npm:typescript" = "7.1.0-beta"
-pi = "1.5.2"
 ripgrep = "15.2.0"
 sd = "1.1.0"
 taplo = "0.10.0"
@@ -46,27 +42,25 @@ login_shell = "fish"
 "brew-cask:google-chrome" = "latest"
 "brew-cask:firefox" = "latest"
 "brew-cask:spotify" = "latest"
-"brew-cask:slack" = "latest"
-"brew-cask:docker-desktop" = "latest"
 
-[bootstrap.macos.dock]
+[bootstrap.settings.macos.dock]
 autohide = true
 show_recents = false
 
-[bootstrap.macos.finder]
+[bootstrap.settings.macos.finder]
 preferred_view_style = "list"
 show_all_files = true
 show_extensions_warning = false
 
-[bootstrap.macos.login_items]
+[bootstrap.settings.macos.login_items]
 apps = [
     "/Applications/Clocker.app",
 ]
 
-[bootstrap.macos.trackpad]
+[bootstrap.settings.macos.trackpad]
 tap_to_click = true
 
-[bootstrap.macos.defaults."NSGlobalDomain"]
+[bootstrap.settings.macos.defaults."NSGlobalDomain"]
 # Appearance: Auto
 AppleInterfaceStyleSwitchesAutomatically = true
 
@@ -77,7 +71,7 @@ AppleInterfaceStyleSwitchesAutomatically = true
 # Disable inserting a period with double-space
 NSAutomaticPeriodSubstitutionEnabled = false
 
-[bootstrap.macos.defaults."com.apple.dock"]
+[bootstrap.settings.macos.defaults."com.apple.dock"]
 mineffect = "scale"
 "minimize-to-application" = true
 
@@ -126,9 +120,3 @@ target = "~/.config/rex"
 root = "misc"
 [dotfile_groups.misc.entries]
 "~/.hushlogin" = { source = "hushlogin" }
-
-[dotfile_groups.pi]
-root = "pi"
-target = "~/.pi"
-[dotfile_groups.pi.entries]
-"~/.pi/agent/settings.json/shared" = { merge = true }

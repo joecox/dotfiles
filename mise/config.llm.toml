@@ -1,0 +1,9 @@
+[tools]
+node = "26"
+pi = "1.5.2"
+
+[dotfile_groups.pi]
+root = "pi"
+target = "~/.pi"
+[dotfile_groups.pi.entries]
+"~/.pi/agent/settings.json/shared" = { merge = true }

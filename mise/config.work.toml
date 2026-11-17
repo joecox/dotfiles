@@ -1,0 +1,5 @@
+[tools]
+awscli = { version = "2.40.1", symlink_bins = "true" }
+
+[bootstrap.packages]
+"brew-cask:slack" = "latest"
