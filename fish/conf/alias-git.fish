@@ -21,6 +21,9 @@ if status --is-interactive
 
     # remotes
     alias gp 'git push'
+    alias gl 'git pull $(git remote) $(git branch --show-current)'
+
+    alias grv 'git remote -v'
 
     # viewing
     alias gst 'git status'
